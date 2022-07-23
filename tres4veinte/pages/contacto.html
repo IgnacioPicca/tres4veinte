@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -30,6 +30,30 @@
             </div>
         </nav>
     </header>
+    <main>
+        <h1>Contacto</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veniam voluptatem cumque doloremque
+            deserunt vero commodi necessitatibus. Quos soluta ipsum aspernatur quo porro, quidem dolor unde. Nemo minus
+            quas nesciunt?</p>
+        <form action="" id="formulario-contacto">
+            <fieldset>
+                <legend>Estamos para asesorarte</legend>
+                <label id="nombre-label">Nombre
+                    <input id="name" type="text" name="name" placeholder="Nombre" required /></label>
+                <label id="apellido-label">Apellido
+                    <input id="apellido" type="text" name="apellido" placeholder="Apellido" required /></label>
+                <label id="email-label">Email
+                    <input id="email" type="email" name="email" placeholder="Email" required /></label>
+                <label id="numero-label">Numero
+                    <input id="numero" type="number" name="numero" min="10" max="15" placeholder="Telefono"
+                        required /></label>
+                <label> Mensaje
+                    <textarea name="" id="" placeholder="Mensaje"></textarea>
+                </label>
+                <input type="submit" id="submit">
+            </fieldset>
+        </form>
+    </main>
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
@@ -45,6 +69,7 @@
                     <li><a href="contacto.html"><i class="fa-solid fa-address-card"></i></a></li>
                 </ul>
             </div>
+            <p id="autor">Diseñado por Ignacio Picca</p>
         </div>
     </footer>
 </body>
