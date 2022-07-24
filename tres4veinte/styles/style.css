@@ -7,6 +7,5 @@
 body {
     background-image: url("../img/background-desktop.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
