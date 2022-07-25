@@ -2,4 +2,131 @@ body {
     background-image: url("../img/background-desktop.jpg");
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* --- Header --- */
+
+.header-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header-navbar ul {
+    display: flex;
+    margin: 10px;
+}
+
+.header-navbar li {
+    margin: 0 50px;
+    list-style: none;
+
+}
+
+.header-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 50px;
+    letter-spacing: 5px;
+}
+
+/* --- Titulo --- */
+
+.titulo {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 100px;
+}
+
+.titulo-info {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 100px;
+}
+
+#musica {
+    position: absolute;
+    bottom: 100px;
+    margin-left: 40%;
+    opacity: 0.8;
+}
+
+/* -- Servicios -- */
+
+#servicio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+}
+
+.servicio-item-container {
+    width: 30%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.servicio-info {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.servicio-box-img {
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+}
+
+.img-servicio {
+    width: 300px;
+    height: 200px;
+    border: #000 solid 1px;
+    border-radius: 10px;
+}
+
+/* -- Footer -- */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.footer-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 50px;
+    letter-spacing: 5px;
+}
+
+.footer-container ul {
+    display: flex;
+    margin: 25px;
+    font-size: 30px;
+}
+
+.footer-container li {
+    margin: 0 50px;
+    list-style: none;
 }
