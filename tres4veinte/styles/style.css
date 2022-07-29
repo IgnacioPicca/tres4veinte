@@ -1,9 +1,53 @@
 body {
-    background-image: url("../img/background-desktop.jpg");
+    /* background-image: url("../img/background-desktop.jpg"); */
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 100vh;
+
+}
+
+/* TESTTTTTTTTTTTTTTTTT */
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #111;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+.demo .large-header {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.main-title {
+    position: absolute;
+    margin: 0;
+    padding: 5;
+    color: #F9F1E9;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-40%, -30%, 0);
+    transform: translate3d(-40%, -30%, 0);
+}
+
+.demo .main-title {
+    text-transform: uppercase;
+    font-size: 2.2em;
+    letter-spacing: 2.1em;
+}
+
+.main-title .thin {
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+    .demo .main-title {
+        font-size: 3em;
+    }
 }
 
 /* --- Header --- */
@@ -35,6 +79,14 @@ header {
     letter-spacing: 5px;
 }
 
+video {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto 50px;
+    display: block;
+
+}
+
 /* --- Titulo --- */
 
 .titulo {
@@ -50,7 +102,42 @@ header {
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
-    margin: 5em;
+    margin: 3em;
+}
+
+/* -- Servicios -- */
+
+#servicio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-item-container {
+    width: 30%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.servicio-info {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.servicio-img {
+    margin-top: 25px;
+    width: 300px;
+    height: 200px;
+    border: #000 solid 1px;
+    border-radius: 10px;
 }
 
 /* -- Eventos -- */
@@ -131,40 +218,6 @@ header {
     border-radius: 10px;
 }
 
-/* -- Servicios -- */
-
-#servicio-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 100px;
-}
-
-.servicio-item-container {
-    width: 30%;
-    height: 300px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #000;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
-}
-
-.servicio-info {
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-top: 20px;
-}
-
-.servicio-img {
-    margin-top: 25px;
-    width: 300px;
-    height: 200px;
-    border: #000 solid 1px;
-    border-radius: 10px;
-}
 
 /* -- Footer -- */
 
@@ -174,7 +227,7 @@ footer {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
-    height: 10%;
+    height: 5%;
     color: #fff;
     padding: 1em;
     position: relative;
@@ -203,4 +256,12 @@ footer {
     font-size: 1rem;
     font-weight: bold;
     color: #fff;
+}
+
+.github {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(60deg, #7affd3, #00ffd5);
+    background-clip: text;
+    color: transparent;
 }
