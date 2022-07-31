@@ -128,7 +128,7 @@ video {
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
-    margin: 9rem;
+    margin: 8rem 0;
 }
 
 .titulo-info {
@@ -151,9 +151,9 @@ video {
 .servicio-item-container {
     width: 50%;
     height: 400px;
-    background-color: #fff;
+    opacity: 2px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 50px #000;
     justify-content: center;
     text-align: center;
     margin: 2.5%;
@@ -252,6 +252,93 @@ video {
     border-radius: 10px;
 }
 
+/* -- Videos -- */
+
+#videos-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video {
+    width: 40%;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* -- Contacto -- */
+
+.login-box {
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+}
+
+.login-box p {
+    margin-bottom: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 100px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin: 30px auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+#submit {
+    width: 20%;
+    height: 50px;
+    margin: 30px auto 0px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+
 
 /* -- Footer -- */
 
@@ -265,6 +352,7 @@ footer {
     color: #fff;
     padding: 1em;
     bottom: 0;
+    margin-top: 5rem;
 }
 
 .footer-title {
