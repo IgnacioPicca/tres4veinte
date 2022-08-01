@@ -114,6 +114,14 @@ header {
     letter-spacing: 5px;
 }
 
+.header-title:hover {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(80deg, #008cff, #00ffd5);
+    background-clip: text;
+    color: transparent;
+}
+
 .navbar-item {
     color: #fff;
     font-size: 20px;
@@ -418,6 +426,14 @@ footer {
     letter-spacing: 5px;
 }
 
+.footer-title:hover {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(80deg, #008cff, #00ffd5);
+    background-clip: text;
+    color: transparent;
+}
+
 .footer-menu {
     display: flex;
     font-size: 30px;
@@ -426,6 +442,10 @@ footer {
 .footer-item {
     padding: 0 1em;
     list-style: none;
+}
+
+.footer-item a:hover {
+    color: #03e9f4;
 }
 
 .autor {
