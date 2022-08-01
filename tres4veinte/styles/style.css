@@ -79,6 +79,8 @@ body {
     background-attachment: fixed;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
+    -webkit-font-smoothing: antialiased;
+
 }
 
 /* --- Header --- */
@@ -127,7 +129,7 @@ header {
     height: 2px;
     left: 0;
     position: absolute;
-    background: #fff;
+    background: #03e9f4;
     opacity: 0.6;
     transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
     width: 0;
@@ -139,12 +141,12 @@ header {
 }
 
 video {
-    width: 600px;
-    height: 400px;
-    margin: 0 auto 50px;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
     display: block;
     border-radius: 10px;
-
+    border: solid 2px rgba(0, 0, 0, 5);
 }
 
 /* --- Titulo --- */
@@ -154,7 +156,7 @@ video {
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
-    margin: 8rem 0;
+    margin: 8rem 0 3rem;
 }
 
 .titulo-info {
@@ -162,7 +164,7 @@ video {
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
-    margin: 3em;
+    margin: 1em;
 }
 
 /* -- Servicios -- */
@@ -182,11 +184,12 @@ video {
     box-shadow: 0px 0px 50px #000;
     justify-content: center;
     text-align: center;
-    margin: 2.5%;
+    margin: 50px 50px 92px;
+    transition: .2s all;
 }
 
 .servicio-info {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
     margin: 30px 0;
@@ -198,6 +201,20 @@ video {
     height: 250px;
     border: #000 solid 1px;
     border-radius: 10px;
+}
+
+#servicio-container:hover .servicio-item-container {
+    filter: blur(3px);
+    opacity: .5;
+    transform: scale(.98);
+    box-shadow: none;
+}
+
+#servicio-container:hover .servicio-item-container:hover {
+    transform: scale(1.1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0px 0px 50px #000;
 }
 
 /* -- Eventos -- */
@@ -227,7 +244,7 @@ video {
 }
 
 .evento-description {
-    padding: 20px;
+    padding: 50px;
     font-size: 20px;
     word-spacing: 5px;
     text-align: center;
@@ -241,7 +258,7 @@ video {
 }
 
 .event-button {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 30%;
     height: 50px;
     background-color: #fff;
@@ -250,8 +267,18 @@ video {
     color: #000;
     font-size: 20px;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     cursor: pointer;
+}
+
+.event-button:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
 }
 
 /* TODO */
@@ -291,14 +318,15 @@ video {
 .video {
     width: 40%;
     height: 600px;
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: 10px;
-    padding: 30px;
+    border-radius: 10px;
+    border: solid 2px rgba(0, 0, 0, 5);
 }
 
 /* -- Contacto -- */
 
-.login-box {
+fieldset {
     width: 40%;
     height: 100%;
     padding: 40px;
@@ -308,14 +336,14 @@ video {
     border-radius: 10px;
 }
 
-.login-box p {
+fieldset p {
     margin-bottom: 50px;
     color: #fff;
     text-align: center;
     font-size: 1.5em;
 }
 
-.login-box .user-box input {
+fieldset label input {
     width: 100%;
     padding: 10px 0;
     font-size: 1em;
@@ -326,6 +354,7 @@ video {
     outline: none;
     background: transparent;
 }
+
 
 textarea {
     width: 100%;
@@ -350,7 +379,7 @@ textarea {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     cursor: pointer;
 }
 
@@ -365,7 +394,6 @@ textarea {
 }
 
 
-
 /* -- Footer -- */
 
 footer {
@@ -378,7 +406,7 @@ footer {
     color: #fff;
     padding: 1em;
     bottom: 0;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .footer-title {
