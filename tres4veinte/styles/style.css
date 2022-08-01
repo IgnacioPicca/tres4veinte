@@ -137,7 +137,7 @@ header {
     height: 2px;
     left: 0;
     position: absolute;
-    background: #03e9f4;
+    background: linear-gradient(80deg, #008cff, #00ffd5);
     opacity: 0.6;
     transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
     width: 0;
