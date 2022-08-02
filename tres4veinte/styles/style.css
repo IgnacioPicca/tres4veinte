@@ -17,11 +17,10 @@
 }
 
 #index-title {
-    position: relative;
-    top: 50%;
-    margin: 10%;
+    text-align: center;
     color: #F9F1E9;
     font-size: 5em;
+    margin-top: 10%;
 }
 
 #index-btn {
@@ -38,7 +37,7 @@
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
-    position: relative;
+    margin-top: 10%;
 }
 
 button::before {
