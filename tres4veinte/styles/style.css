@@ -37,7 +37,7 @@
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
-    position: relative;
+    margin-top: 10%;
 }
 
 button::before {
@@ -164,7 +164,7 @@ header {
 video {
     width: 50%;
     height: auto;
-    margin: 0 auto;
+    margin: 25px auto;
     display: block;
     border-radius: 10px;
     border: solid 2px rgba(0, 0, 0, 5);
@@ -192,13 +192,14 @@ video {
 
 #servicio-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
 
 .servicio-item-container {
-    width: 50%;
+    width: 25%;
     height: 400px;
     opacity: 2px;
     border-radius: 10px;
@@ -218,7 +219,7 @@ video {
 
 .servicio-img {
     margin-top: 25px;
-    width: 400px;
+    width: 80%;
     height: 250px;
     border: #000 solid 1px;
     border-radius: 10px;
