@@ -1,6 +1,6 @@
 #index-body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
     overflow: hidden;
 }
@@ -9,19 +9,18 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: black;
     background-position: center;
     z-index: -1;
 }
 
 #index-title {
-    position: relative;
     top: 50%;
-    margin: 10%;
+    margin: 10% 0;
     color: #F9F1E9;
-    font-size: 5em;
+    font-size: 8vw;
 }
 
 #index-btn {
@@ -34,7 +33,7 @@
     background: linear-gradient(90deg, rgb(205, 205, 243) 0%, rgb(203, 247, 242) 100%);
     border: none;
     border-radius: 1000px;
-    box-shadow: 5px 20px 100px rgba(79, 92, 209, 0.64);
+    box-shadow: 5px 50px 100px rgba(79, 92, 209, 0.8);
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
@@ -79,8 +78,21 @@ body {
     background-attachment: fixed;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
-    -webkit-font-smoothing: antialiased;
 
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 255, 225) 100%);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: transparent;
+    /* opacity: 0; should do the thing either */
+    box-shadow: 0px 0px 0px 100000vh black;
 }
 
 /* --- Header --- */
@@ -118,6 +130,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(80deg, #008cff, #00ffd5);
+    fill: transparent;
     background-clip: text;
     color: transparent;
 }
@@ -248,7 +261,7 @@ video {
     word-spacing: 5px;
     text-align: center;
     color: #fff;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 }
 
 .evento-description {
@@ -262,7 +275,7 @@ video {
 
 .event-button-container {
     position: relative;
-    margin-top: 50px;
+    margin-top: 10%;
 }
 
 .event-button {
