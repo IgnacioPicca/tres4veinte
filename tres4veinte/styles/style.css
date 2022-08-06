@@ -301,11 +301,10 @@ video {
 
 .video {
     width: 40%;
-    height: 600px;
-    margin: 10px auto;
+    height: 300px;
+    margin: 1em auto;
     border-radius: 10px;
-    border-radius: 10px;
-    border: solid 2px rgba(0, 0, 0, 5);
+    border: solid 2px #002574;
 }
 
 /* -- Contacto -- */
