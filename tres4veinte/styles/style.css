@@ -188,6 +188,7 @@ video {
 
 .servicio-item-container {
     width: 20%;
+    min-width: 400px;
     height: 100%;
     opacity: 2px;
     border-radius: 10px;
@@ -208,6 +209,7 @@ video {
 .servicio-img {
     margin: 25px;
     width: 80%;
+    min-width: 300px;
     height: 250px;
     border: #000 solid 1px;
     border-radius: 10px;
@@ -304,6 +306,7 @@ video {
 
 .video {
     width: 40%;
+    min-width: 400px;
     height: 300px;
     margin: 1em auto;
     border-radius: 10px;
