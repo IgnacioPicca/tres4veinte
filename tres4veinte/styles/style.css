@@ -67,7 +67,9 @@ button:focus::before {
     opacity: 1;
 }
 
-/* --- PAGES --- */
+/* --------------------- Fin index ---------------------*/
+
+/* ------ Body ------ */
 
 body {
     width: 100%;
@@ -82,7 +84,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* --- Header --- */
+/* --------- Header ---------*/
 
 header {
     padding: 1em 0.5em;
@@ -147,19 +149,7 @@ header {
     opacity: 0.9;
 }
 
-video {
-    width: 50%;
-    min-width: 400px;
-    height: auto;
-    justify-content: center;
-    margin: 0 auto;
-    display: block;
-    border-radius: 10px;
-    border: solid 2px rgba(0, 0, 0, 5);
-    box-shadow: 25px 25px 50px rgba(0, 0, 0, .5);
-}
-
-/* --- Titulo --- */
+/* ------ Titulos ------ */
 
 .titulo {
     font-size: 4em;
@@ -177,7 +167,85 @@ video {
     margin: 2em;
 }
 
-/* -- Servicios -- */
+/* ------ Footer ------ */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 5%;
+    color: #fff;
+    padding: 1em;
+    bottom: 0;
+    margin-top: 3.4rem;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 0.5em;
+    letter-spacing: 5px;
+}
+
+.footer-title:hover {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(80deg, #008cff, #00ffd5);
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-menu {
+    display: flex;
+    font-size: 1.5em;
+}
+
+.footer-item {
+    list-style: none;
+    margin: 0 1em;
+}
+
+.footer-item a:hover {
+    color: #03e9f4;
+}
+
+.autor {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.github {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(60deg, #7affd3, #00ffd5);
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* ------------------------ PAGES ------------------------ */
+
+
+/* ------ Inicio ------ */
+
+video {
+    width: 50%;
+    min-width: 400px;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    border: solid 2px rgba(0, 0, 0, 5);
+    box-shadow: 25px 25px 50px rgba(0, 0, 0, .5);
+}
+
+
+/* ------ Servicios ------ */
 
 #servicio-container {
     display: flex;
@@ -220,9 +288,14 @@ video {
     filter: blur(0px);
     opacity: 1;
     box-shadow: 0px 0px 50px #000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(80deg, #008cff, #00ffd5);
+    background-clip: text;
+    color: transparent;
 }
 
-/* -- Eventos -- */
+/* -------- Eventos ------ */
 
 #eventos-container {
     width: 100%;
@@ -296,7 +369,7 @@ video {
         0 0 100px #03e9f4;
 }
 
-/* -- Videos -- */
+/* ------ Videos ------ */
 
 #videos-container {
     width: 100%;
@@ -316,7 +389,7 @@ video {
     border: solid 2px #ffffff;
 }
 
-/* -- Contacto -- */
+/* ------ Contacto ------ */
 
 fieldset {
     width: 40%;
@@ -386,62 +459,6 @@ textarea {
         0 0 100px #03e9f4;
 }
 
+/* --------------------- Fin pages ---------------------*/
 
-/* -- Footer -- */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 5%;
-    color: #fff;
-    padding: 1em;
-    bottom: 0;
-    margin-top: 3.4rem;
-}
-
-.footer-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-    padding: 0 0.5em;
-    letter-spacing: 5px;
-}
-
-.footer-title:hover {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(80deg, #008cff, #00ffd5);
-    background-clip: text;
-    color: transparent;
-}
-
-.footer-menu {
-    display: flex;
-    font-size: 1.5em;
-}
-
-.footer-item {
-    list-style: none;
-    margin: 0 1em;
-}
-
-.footer-item a:hover {
-    color: #03e9f4;
-}
-
-.autor {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #fff;
-}
-
-.github {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(60deg, #7affd3, #00ffd5);
-    background-clip: text;
-    color: transparent;
-}
+/* ------ Ingreso elementos ------ */
