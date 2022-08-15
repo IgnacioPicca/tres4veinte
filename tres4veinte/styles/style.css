@@ -150,8 +150,8 @@ header {
     opacity: 0.9;
 }
 
-/* ------ Titulo ------ */
 
+/* --- Titulo --- */
 .titulo {
     font-size: 4em;
     font-weight: bold;
@@ -474,6 +474,14 @@ textarea {
     opacity: 0;
     transform: translate(10vh, 0vh);
     transition: all 1s;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 0.5em;
+    letter-spacing: 5px;
 }
 
 .fadeLeft {
