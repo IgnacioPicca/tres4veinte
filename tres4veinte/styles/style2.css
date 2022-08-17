@@ -320,6 +320,12 @@ video {
     box-shadow: 25px 25px 50px rgba(0, 0, 0, .5);
 }
 
+#video-container {
+    margin: 100px 20px;
+}
+
+/* ACOMODAR PARA QUE OCUPE TODO EL ALTO DE LA PANTALLA */
+
 /* ------ Servicios ------ */
 
 #servicio-container {
