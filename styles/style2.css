@@ -26,7 +26,7 @@ body {
 .header-title {
     font-size: 2em;
     font-weight: bold;
-    color: #fff !important;
+    color: #fff;
     margin: 0 2em;
     letter-spacing: 5px;
 }
@@ -41,11 +41,16 @@ body {
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.3) !important;
+    ;
     width: 100vw;
     height: 10%;
     position: fixed;
     grid-area: header;
     z-index: 1;
+}
+
+#nav-bg {
+    background-color: rgba(0, 0, 0, 0.3)
 }
 
 .nav-item {
@@ -93,6 +98,11 @@ a {
     background-clip: text;
     color: transparent;
 }
+
+.navbar-brand {
+    color: rgb(255, 255, 255);
+}
+
 
 /* --------- Main ---------*/
 
@@ -231,8 +241,6 @@ footer {
 #index-title {
     color: #F9F1E9;
     font-size: 12vw;
-    margin-top: 50vh;
-    margin-left: 8vw;
     grid-area: header;
 }
 
@@ -252,7 +260,6 @@ footer {
     cursor: pointer;
     outline: none;
     grid-area: main;
-    margin-top: 60vh;
 }
 
 #particles-js {
