@@ -23,33 +23,10 @@ body {
 
 /* --------- Header ---------*/
 
-header {
-    padding: 1em 0.5em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100vw;
-    height: 10%;
-    position: fixed;
-    top: 0;
-    grid-area: header;
-    z-index: 9999;
-}
-
-.header-navbar ul {
-    display: flex;
-}
-
-.header-navbar li {
-    margin: 0 2em;
-    list-style: none;
-}
-
 .header-title {
     font-size: 2em;
     font-weight: bold;
-    color: #fff;
+    color: #fff !important;
     margin: 0 2em;
     letter-spacing: 5px;
 }
@@ -62,15 +39,36 @@ header {
     color: transparent;
 }
 
-.navbar-item {
-    color: rgb(255, 255, 255);
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    width: 100vw;
+    height: 10%;
+    position: fixed;
+    grid-area: header;
+    z-index: 1;
+}
+
+.nav-item {
+    margin: 0 2em;
+    list-style: none;
+}
+
+a {
+    color: rgb(255, 255, 255) !important;
+}
+
+.nav-item {
     font-size: 1em;
     margin: 0px 2em;
     text-decoration: none;
     position: relative;
 }
 
-.navbar-item:after {
+.nav-item:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav-item:after {
     bottom: -4px;
     content: "";
     display: block;
@@ -83,24 +81,17 @@ header {
     width: 0;
 }
 
-.navbar-item:hover:after {
+.nav-item:hover:after {
     width: 100%;
     opacity: 0.9;
 }
 
-.menu-hamburguesa {
-    display: none;
-}
-
-@media (max-width: 970px) {
-    .header-navbar {
-        display: none;
-    }
-
-    .menu-hamburguesa {
-        display: inline;
-    }
-
+.nav-link:hover {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(80deg, #008cff, #00ffd5);
+    background-clip: text;
+    color: transparent;
 }
 
 /* --------- Main ---------*/
@@ -276,7 +267,7 @@ footer {
 }
 
 
-button::before {
+#index-btn::before {
     content: '';
     border-radius: 1000px;
     min-width: calc(250px + 10px);
@@ -291,14 +282,14 @@ button::before {
     transition: all .3s ease-in-out 0s;
 }
 
-button:hover,
-button:focus {
+#index-btn:hover,
+#index-btn:focus {
     color: rgba(79, 92, 209, 0.64);
     transform: translateY(-6px);
 }
 
-button:hover::before,
-button:focus::before {
+#index-btn:hover::before,
+#index-btn:focus::before {
     opacity: 1;
 }
 
@@ -307,7 +298,7 @@ button:focus::before {
         width: 150px;
     }
 
-    button::before {
+    #index-btn::before {
         min-width: calc(150px + 10px);
     }
 
@@ -553,7 +544,7 @@ h4 {
 
 /* ------ Contacto ------ */
 
-fieldset {
+.fieldset {
     width: 40%;
     min-width: 350px;
     padding: 30px;
@@ -563,14 +554,14 @@ fieldset {
     border-radius: 20px;
 }
 
-fieldset p {
+.fieldset p {
     margin-bottom: 50px;
     color: #fff;
     text-align: center;
     font-size: 1.5em;
 }
 
-fieldset label input {
+.fieldset .label .input {
     width: 100%;
     padding: 15px 0;
     font-size: 1em;
@@ -583,7 +574,7 @@ fieldset label input {
     margin: 15px auto;
 }
 
-textarea {
+.coment {
     width: 100%;
     height: 124px;
     margin: 15px auto;
@@ -594,12 +585,6 @@ textarea {
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
 
 #submit {
