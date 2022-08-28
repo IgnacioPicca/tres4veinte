@@ -16,5 +16,18 @@ body {
         "header"
         "main"
         "foot";
-    grid-template-rows: 6em 2fr 0.5em;
+    grid-template-rows: 6em 2fr 2em;
+
+    a {
+        text-decoration: none !important;
+        color: rgb(255, 255, 255) !important;
+        &:hover{
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(80deg, #008cff, #00ffd5);
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
 }

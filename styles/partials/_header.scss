@@ -1,8 +1,8 @@
-.header-title {
+.navbar-brand {
     font-size: 2em;
     font-weight: bold;
     color: #fff;
-    margin: 0 2em;
+    margin: 0 1em;
     letter-spacing: 5px;
     &:hover {
         -webkit-background-clip: text;
@@ -14,21 +14,9 @@
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    ;
-    width: 100vw;
-    height: 10%;
-    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     grid-area: header;
     z-index: 1;
-}
-
-#nav-bg {
-    background-color: rgba(0, 0, 0, 0.3)
-}
-
-a {
-    color: rgb(255, 255, 255) !important;
 }
 
 .nav-item {
@@ -67,6 +55,4 @@ a {
     color: transparent;
 }
 
-.navbar-brand {
-    color: rgb(255, 255, 255);
-}
+
