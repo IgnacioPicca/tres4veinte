@@ -1,0 +1,85 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    min-height: 80px;
+    color: #fff;
+    bottom: 0;
+    grid-area: foot;
+    display: grid;
+    grid-template-areas:
+        "footer-title autor footer-menu";
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    column-gap: 1em;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 5px;
+    grid-area: footer-title;
+    &:hover {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(80deg, #008cff, #00ffd5);
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    grid-area: footer-menu;
+}
+
+.footer-item {
+    list-style: none;
+    margin: 0 1em;
+    &a:hover {
+    color: #03e9f4 !important;
+    }
+}
+
+.autor {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    grid-area: autor;
+}
+
+.github {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(60deg, #7affd3, #00ffd5);
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-solid {
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    grid-area: foot;
+    position: fixed;
+}
+
+@media (max-width: 601px) {
+    footer {
+        display: grid;
+        grid-template-areas:
+            "autor footer-menu";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .footer-title {
+        display: none;
+    }
+}
