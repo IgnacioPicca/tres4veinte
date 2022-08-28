@@ -54,29 +54,31 @@
         <h1 class="titulo">Contactanos</h1>
         <h2 class="titulo-info">Estamos para ayudarte</h2>
 
-        <form>
-            <div class="container fieldset">
-                <div class="row">
-                    <div class="col">
-                        <div class="mb-3">
-                            <label for="nameInput" class="form-label">Nombre</label>
-                            <input id="nameInput" type="text" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="surnameInput" class="form-label">Apellido</label>
-                            <input id="surnameInput" type="text" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="comentId" class="form-label">Deja tu comentario</label>
-                            <textarea name="" id="comentId" rows="4" class="form-control coment"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <button class="btn" id="submit">Enviar</button>
+        <div id="contacto-container">
+            <form>
+                <div class="container fieldset">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="nameInput" class="form-label">Nombre</label>
+                                <input id="nameInput" type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="numberInput" class="form-label">Telefono</label>
+                                <input id="numberInput" type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="comentId" class="form-label">Deja tu comentario</label>
+                                <textarea name="" id="comentId" rows="4" class="form-control coment"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <button class="btn" id="submit">Enviar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </main>
 
     <footer>
@@ -93,6 +95,8 @@
                     <i class="fa-solid fa-address-card"></i></a>
             </li>
         </ul>
+
+
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
