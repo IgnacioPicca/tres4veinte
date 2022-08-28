@@ -16,17 +16,32 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 102%;
-    height: 103%;
+    width: 100vw;
+    height: 100vh;
     background-color: black;
     background-position: center;
     z-index: -1;
 }
 
 #index-title {
-    color: #F9F1E9;
-    font-size: 12vw;
     grid-area: header;
+    margin: 1em auto;
+
+    font-size: 10vw;
+    text-shadow: 4px 4px 0px #3F7FBF;
+    mix-blend-mode: screen;
+    animation: fadeIn 2.5s linear forwards;
+    font-family: 'Niconne', cursive;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
 }
 
 #index-btn {
@@ -45,6 +60,7 @@
     cursor: pointer;
     outline: none;
     grid-area: main;
+    animation: fadeIn 2.5s linear forwards;
 
     &::before {
         content: '';
@@ -70,6 +86,16 @@
     &:focus::before {
         opacity: 1;
     }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
 }
 
 

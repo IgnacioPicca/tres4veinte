@@ -6,8 +6,8 @@ body {
     background-image: url(../img/index-bg.jpg);
     background-image: cover;
     background-attachment: fixed;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: aliceblue;
+    font-family: $fuente;
+    color: $color;
     -webkit-font-smoothing: antialiased;
 
     display: grid;
