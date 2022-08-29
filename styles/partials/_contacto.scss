@@ -1,0 +1,112 @@
+.fieldset {
+    width: 40%;
+    min-width: 350px;
+    padding: 30px;
+    margin: 25px auto;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    & p {
+        margin-bottom: 50px;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    & .label .input {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1em;
+        color: #fff;
+        margin-bottom: 100px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+        margin: 15px auto;
+    }
+}
+
+.form-control{
+    background-color: transparent;
+    border-color: #f8f8f8;
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    color: #03e9f4;
+    margin-bottom: 100px;
+    outline: none;
+    background: transparent;
+    margin: 15px auto;
+
+    &:focus{
+        background-color: transparent;
+        color: #03e9f4;
+    }
+}
+
+.coment {
+    width: 100%;
+    height: 124px;
+    margin: 15px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 16px;
+    resize: none;
+}
+
+#submit {
+    width: 200px;
+    height: 50px;
+    margin: 10px auto 0px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    
+    &:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.contacto-container{
+    display: flex;
+}
+
+
+// input:focus ~ label,
+// textarea:focus ~ label,
+// input:valid ~ label,
+// textarea:valid ~ label {
+//   font-size: 1em;
+//   color: gainsboro;
+//   padding: 0 2em;
+//   -webkit-transition: all 0.225s ease;
+//   transition: all 0.225s ease;
+// }
+
+

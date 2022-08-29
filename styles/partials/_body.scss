@@ -1,0 +1,33 @@
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-position: center;
+    background-image: url(../img/index-bg.jpg);
+    background-image: cover;
+    background-attachment: fixed;
+    font-family: $fuente;
+    color: $color;
+    -webkit-font-smoothing: antialiased;
+
+    display: grid;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "foot";
+    grid-template-rows: 6em 2fr 2em;
+
+    a {
+        text-decoration: none !important;
+        color: rgb(255, 255, 255) !important;
+        &:hover{
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(80deg, #008cff, #00ffd5);
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+}

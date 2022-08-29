@@ -1,0 +1,21 @@
+main {
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.titulo-info {
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 2em;
+}

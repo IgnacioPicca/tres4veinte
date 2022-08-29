@@ -1,0 +1,110 @@
+#index-body {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main";
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr;
+    background-color: #000;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-position: center;
+    z-index: -1;
+}
+
+#index-title {
+    grid-area: header;
+    margin: 1em auto;
+
+    font-size: 10vw;
+    text-shadow: 4px 4px 0px #3F7FBF;
+    mix-blend-mode: screen;
+    animation: fadeIn 2.5s linear forwards;
+    font-family: 'Niconne', cursive;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+}
+
+#index-btn {
+    width: 250px;
+    min-height: 3em;
+    min-width: 3em;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    color: rgba(6, 14, 82, 0.64);
+    background: linear-gradient(90deg, rgb(205, 205, 243) 0%, rgb(203, 247, 242) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 5px 20px 100px rgba(79, 92, 209, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    grid-area: main;
+    animation: fadeIn 2.5s linear forwards;
+
+    &::before {
+        content: '';
+        border-radius: 1000px;
+        min-width: calc(250px + 10px);
+        min-height: calc(3em + 0.5em);
+        border: 6px solid #ffffff;
+        box-shadow: 0 0 60px rgba(238, 255, 252, 0.64);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all .3s ease-in-out 0s;
+    }
+
+    &:hover, &:focus {
+        color: rgba(79, 92, 209, 0.64);
+        transform: translateY(-6px);
+    }
+
+    &:hover::before,
+    &:focus::before {
+        opacity: 1;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    #index-btn {
+        width: 150px;
+    }
+
+    #index-btn::before {
+        min-width: calc(150px + 10px);
+    }
+}
