@@ -95,15 +95,12 @@
             opacity: 1;
         }
     }
-
 }
-
 
 @media (max-width: 500px) {
     #index-btn {
         width: 150px;
     }
-
     #index-btn::before {
         min-width: calc(150px + 10px);
     }
