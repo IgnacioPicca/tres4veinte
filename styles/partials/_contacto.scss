@@ -93,6 +93,10 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.contacto-container{
+    display: flex;
+}
+
 
 // input:focus ~ label,
 // textarea:focus ~ label,
