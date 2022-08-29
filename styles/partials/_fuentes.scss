@@ -1,2 +1,6 @@
-$fuente: 'Niconne', cursive;
+@font-face {
+    font-family: Niconne;
+    src: url(../../fonts/Niconne-Regular.ttf );
+}
 
+$fuente: Niconne;
