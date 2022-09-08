@@ -15,7 +15,7 @@
     width: 100%;
     padding: 1em;
     font-size: 1em;
-    color: #03e9f4;
+    color: map-get($colores , HoverColor);
     margin-bottom: 100px;
     outline: none;
     background: transparent;
@@ -23,7 +23,7 @@
 
     &:focus{
         background-color: transparent;
-        color: #03e9f4;
+        color:  map-get($colores , HoverColor);
     }
 }
 
@@ -54,13 +54,13 @@
     cursor: pointer;
     
     &:hover {
-    background: #03e9f4;
+    background: map-get($colores , HoverColor);
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-        0 0 25px #03e9f4,
-        0 0 50px #03e9f4,
-        0 0 100px #03e9f4;
+    box-shadow: 0 0 5px map-get($colores , HoverColor),
+        0 0 25px map-get($colores , HoverColor),
+        0 0 50px map-get($colores , HoverColor),
+        0 0 100px map-get($colores , HoverColor),
     }
 }
 
