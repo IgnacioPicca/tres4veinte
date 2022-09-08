@@ -1,19 +1,16 @@
 .fadeTop {
-    opacity: 0;
+    @extend %moves;
     transform: translate(0, 10vh);
-    transition: all 1s;
 }
 
 .fadeRight {
-    opacity: 0;
+    @extend %moves;
     transform: translate(10vh, 0vh);
-    transition: all 1s;
 }
 
 .fadeLeft {
-    opacity: 0;
+    @extend %moves;
     transform: translate(-10vh, 0vh);
-    transition: all 1s;
 }
 
 .visible {
