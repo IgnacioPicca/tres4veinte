@@ -5,16 +5,7 @@
 }
 
 .evento-card {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    min-width: 600px;
-    height: 33%;
-    margin: 2em auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgb(255, 255, 255);
-    
+    @include eventCards(rgba(0, 0, 0, 0.7), 0px 0px 20px rgb(255, 255, 255));
 }
 
 .evento-titulo {
@@ -52,9 +43,9 @@
     margin-top: 20%;
     width: 30%;
     height: 50px;
-    background-color: map-get($colores , textColor);
     border-radius: 10px;
     border: 1px solid map-get($colores , textColor);
+    background-color: map-get($colores , textColor);
     color: #000;
     font-size: 1em;
     font-weight: bold;
