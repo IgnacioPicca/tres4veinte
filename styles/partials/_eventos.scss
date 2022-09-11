@@ -12,7 +12,7 @@
     font-size: 2em;
     word-spacing: 3px;
     text-align: center;
-    color:map-get($colores , textColor);
+    color: map-get($colores , textColor);
     margin: 1em;
 }
 
@@ -22,7 +22,7 @@
     min-width: 300px;
     width: 50%;
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 2em;
 }
 
@@ -53,13 +53,12 @@
     cursor: pointer;
 
     &:hover {
-    background: map-get($colores , HoverColor);
-    color: map-get($colores , textColor);
-    border-radius: 5px;
-    box-shadow: 0 0 5px map-get($colores , HoverColor),
-        0 0 25px map-get($colores , HoverColor),
-        0 0 50px map-get($colores , HoverColor),
-        0 0 100px map-get($colores , HoverColor),
+        background: map-get($colores , HoverColor);
+        color: map-get($colores , textColor);
+        border-radius: 5px;
+        box-shadow: 0 0 5px map-get($colores , HoverColor),
+            0 0 25px map-get($colores , HoverColor),
+            0 0 50px map-get($colores , HoverColor),
+            0 0 100px map-get($colores , HoverColor),
     }
 }
-

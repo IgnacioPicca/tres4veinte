@@ -4,14 +4,9 @@ body {
     text-align: center;
     background-position: center;
     background-image: url(../img/index-bg.jpg);
-    background-image: cover;
-    background-attachment: fixed;
     font-family: $fuente;
     color: map-get($colores, textColor);
-    -webkit-font-smoothing: antialiased;
-
     display: grid;
-
     grid-template-areas:
         "header"
         "main"
@@ -19,12 +14,14 @@ body {
     grid-template-rows: 6em 2fr 2em;
 
     a {
+        // Piso el estilado de bs
         text-decoration: none !important;
         color: map-get($colores, textColor) !important;
-        &:hover{
+
+        &:hover {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-image:  map-get($colores , gradientColor);
+            background-image: map-get($colores , gradientColor);
             background-clip: text;
             color: transparent;
         }
