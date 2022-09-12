@@ -12,7 +12,7 @@ Eventos:
 	+ Border radius a las img 
 
 Videos:
-	Ver width videos
+	+ Ver width videos
 
 Contacto:
 	Modificar form

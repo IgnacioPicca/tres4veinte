@@ -2,7 +2,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.3);
     align-items: center;
     width: 100%;
-    height: 100%;
     min-height: 80px;
     color: map-get($colores , textColor);
     bottom: 0;
@@ -22,6 +21,7 @@ footer {
     color: map-get($colores , textColor);
     letter-spacing: 5px;
     grid-area: footer-title;
+
     &:hover {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -41,6 +41,7 @@ footer {
 .footer-item {
     list-style: none;
     margin: 0 1em;
+
     & a:hover {
         color: map-get($colores , HoverColor);
     }
@@ -69,6 +70,7 @@ footer {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
     }
+
     .footer-title {
         display: none;
     }

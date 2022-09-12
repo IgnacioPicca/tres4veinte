@@ -4,12 +4,12 @@
     padding: 30px;
     margin: 25px auto;
     background: rgba(0, 0, 0, .5);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
     border-radius: 20px;
     display: inline-block;
 }
 
-.form-control{
+.form-control {
     background-color: transparent;
     border-color: #f8f8f8;
     width: 100%;
@@ -21,9 +21,9 @@
     background: transparent;
     margin: 1em auto;
 
-    &:focus{
+    &:focus {
         background-color: transparent;
-        color:  map-get($colores , HoverColor);
+        color: map-get($colores , HoverColor);
     }
 }
 
@@ -52,15 +52,15 @@
     font-weight: bold;
     letter-spacing: 2px;
     cursor: pointer;
-    
+
     &:hover {
-    background: map-get($colores , HoverColor);
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px map-get($colores , HoverColor),
-        0 0 25px map-get($colores , HoverColor),
-        0 0 50px map-get($colores , HoverColor),
-        0 0 100px map-get($colores , HoverColor),
+        background: map-get($colores , HoverColor);
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px map-get($colores , HoverColor),
+            0 0 25px map-get($colores , HoverColor),
+            0 0 50px map-get($colores , HoverColor),
+            0 0 100px map-get($colores , HoverColor),
     }
 }
 
@@ -68,13 +68,11 @@
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
-
-
