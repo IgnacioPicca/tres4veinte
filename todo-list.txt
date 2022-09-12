@@ -1,7 +1,11 @@
 -- DESKTOP --
 
+Index:
+	+ Fix background
+	+ Fix button
+
 Inicio:
-	Agregar descripción
+	+ Agregar descripción
 	Estructurar la info
 
 Eventos:
@@ -16,7 +20,6 @@ Contacto:
 
 
 -- MOBILE --
-
 	SOLUCIONAR FUENTE EN CURSIVA VISTA MOBILE
 	Hover del nav sin border bottom
 	Agrandar fuente y componentes
