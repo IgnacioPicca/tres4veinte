@@ -16,32 +16,34 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 101vw;
+    height: 101vh;
     background-color: black;
     background-position: center;
     z-index: -1;
+    overflow: hidden;
 }
 
 #index-title {
     grid-area: header;
     margin: 1em auto;
-
     font-size: 10vw;
     text-shadow: 4px 4px 0px #3F7FBF;
     mix-blend-mode: screen;
     animation: fadeIn 2.5s linear forwards;
     font-family: 'Niconne', cursive;
 
+
     @keyframes fadeIn {
         0% {
             opacity: 0
         }
+
         100% {
             opacity: 1;
         }
     }
-    
+
 }
 
 #index-btn {
@@ -77,8 +79,9 @@
         transition: all .3s ease-in-out 0s;
     }
 
-    &:hover, &:focus {
-        color: rgba(79, 92, 209, 0.64);
+    &:hover,
+    &:focus {
+        color: rgba(79, 92, 209, 0.64) !important;
         transform: translateY(-6px);
     }
 
@@ -91,6 +94,7 @@
         0% {
             opacity: 0
         }
+
         100% {
             opacity: 1;
         }
@@ -101,6 +105,7 @@
     #index-btn {
         width: 150px;
     }
+
     #index-btn::before {
         min-width: calc(150px + 10px);
     }

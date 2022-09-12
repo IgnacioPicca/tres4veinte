@@ -1,15 +1,11 @@
 -- DESKTOP --
 
-Index:
-	Fix botón de inicio al hover
-
 Inicio:
 	Agregar descripción
 	Estructurar la info
-	Fix hover links cards
 
 Eventos:
-	Border radius a las img?
+	+ Border radius a las img 
 
 Videos:
 	Ver width videos
