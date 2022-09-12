@@ -5,7 +5,6 @@ footer {
     min-height: 80px;
     color: map-get($colores , textColor);
     bottom: 0;
-    grid-area: foot;
     display: grid;
     grid-template-areas:
         "footer-title autor footer-menu";

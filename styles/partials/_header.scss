@@ -4,6 +4,7 @@
     color: map-get($colores , textColor);
     margin: 0 1em;
     letter-spacing: 5px;
+
     &:hover {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -15,7 +16,6 @@
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.7);
-    grid-area: header;
     z-index: 1;
 }
 
@@ -26,9 +26,11 @@
     margin: 0 2em;
     text-decoration: none;
     position: relative;
+
     &:hover {
         color: map-get($colores , textColor);
     }
+
     &:after {
         bottom: -4px;
         content: "";
@@ -41,6 +43,7 @@
         transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
         width: 0;
     }
+
     &:hover:after {
         width: 100%;
         opacity: 0.9;
@@ -54,5 +57,3 @@
     background-clip: text;
     color: transparent;
 }
-
-

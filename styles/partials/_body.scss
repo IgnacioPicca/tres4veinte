@@ -6,13 +6,6 @@ body {
     font-family: $fuente;
     color: map-get($colores, textColor);
 
-    display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "foot";
-    grid-template-rows: 2em 1fr 1em;
-
     a {
         // Piso el estilado de bs
         text-decoration: none !important;
