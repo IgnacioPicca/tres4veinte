@@ -18,9 +18,9 @@
 
 .evento-img {
     height: 400px;
-    max-width: 500px;
-    min-width: 360px;
-    width: 50%;
+    min-height: 300px;
+    max-height: 400px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 50px;
     padding: 2em;
@@ -64,8 +64,36 @@
     }
 }
 
+.ev-mobile {
+    display: none;
+}
+
 @media (max-width: 950px) {
-    .evento-img {
+    .evento-card {
+        display: block;
         width: 100%;
+    }
+
+    .evento-img {
+        height: 400px;
+        height: 400px;
+        min-height: 400px;
+        max-height: 400px;
+    }
+
+    .evento-description {
+        width: 100%;
+    }
+
+    .evento-titulo {
+        margin: 0.5em;
+    }
+
+    .ev-desktop {
+        display: none;
+    }
+
+    .ev-mobile {
+        display: inline;
     }
 }
