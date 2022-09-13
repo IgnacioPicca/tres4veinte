@@ -19,7 +19,7 @@
 .evento-img {
     height: 400px;
     max-width: 500px;
-    min-width: 300px;
+    min-width: 360px;
     width: 50%;
     margin: 0 auto;
     border-radius: 50px;
@@ -37,12 +37,12 @@
 .event-info {
     font-size: 1em;
     letter-spacing: 2px;
+    padding: 1em;
 }
 
 .event-button {
-    margin-top: 20%;
-    width: 30%;
-    min-width: 100px;
+    margin-top: 1em;
+    width: 10em;
     height: 50px;
     border-radius: 10px;
     border: 1px solid map-get($colores , textColor);
@@ -61,5 +61,11 @@
             0 0 25px map-get($colores , HoverColor),
             0 0 50px map-get($colores , HoverColor),
             0 0 100px map-get($colores , HoverColor),
+    }
+}
+
+@media (max-width: 950px) {
+    .evento-img {
+        width: 100%;
     }
 }
