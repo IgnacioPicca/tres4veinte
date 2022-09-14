@@ -14,7 +14,7 @@ h4 {
 }
 
 #creadoras-info {
-    margin: 2em 5em;
+    margin: 2em 0em;
 }
 
 .cards {
@@ -92,4 +92,11 @@ h4 {
         left: 0;
         color: rgba(255, 255, 255, 0.9);
     }
+}
+
+@media (max-width: 950px) {
+    #inicio-descripcion {
+        display: none;
+    }
+
 }
