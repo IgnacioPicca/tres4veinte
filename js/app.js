@@ -15,8 +15,3 @@ window.addEventListener('scroll', function () {                         //Al hac
         }
     }
 });
-
-window.addEventListener("load", function () {
-    document.getElementById("index-btn").style.display = "none";
-    setTimeout(function () { window.location.href = "https://professor-falken.com"; }, 5000);
-});
