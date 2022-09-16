@@ -26,6 +26,7 @@
     margin: 0 2em;
     text-decoration: none;
     position: relative;
+    font-weight: bold;
 
     &:hover {
         color: map-get($colores , textColor);
@@ -56,4 +57,10 @@
     background-image: map-get($colores , gradientColor);
     background-clip: text;
     color: transparent;
+}
+
+@media (max-width: 320px) {
+    .navbar-brand {
+        font-size: 1.4em;
+    }
 }

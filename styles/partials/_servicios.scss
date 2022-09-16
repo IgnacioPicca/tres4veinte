@@ -52,3 +52,10 @@
         color: transparent;
     }
 }
+
+@media (max-width: 990px) {
+    #servicios-descripcion {
+        display: none;
+    }
+
+}
