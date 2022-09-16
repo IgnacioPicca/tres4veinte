@@ -19,3 +19,10 @@ main {
     text-align: center;
     margin: 2em;
 }
+
+@media (max-width: 375px) {
+    .titulo {
+        font-size: 2.8em;
+        margin-top: 2em;
+    }
+}
