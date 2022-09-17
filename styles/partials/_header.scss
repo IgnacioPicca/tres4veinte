@@ -19,6 +19,10 @@
     z-index: 1;
 }
 
+.nav-link {
+    color: map-get($colores , textColor) !important;
+}
+
 .nav-item {
     margin: 0 2em;
     list-style: none;

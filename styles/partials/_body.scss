@@ -7,9 +7,8 @@
     color: map-get($colores, textColor);
 
     a {
-        // Piso el estilado de bs
-        text-decoration: none !important;
-        color: map-get($colores, textColor) !important;
+        text-decoration: none;
+        color: map-get($colores, textColor);
 
         &:hover {
             -webkit-background-clip: text;
