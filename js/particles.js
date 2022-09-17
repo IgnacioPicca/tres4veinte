@@ -21,7 +21,7 @@ const options = {
         },
         modes: {
             push: {
-                quantity: 6, // number of particles to add
+                quantity: 2, // number of particles to add
             },
             repulse: {
                 distance: 100, // the distance of the particles from the mouse
@@ -32,7 +32,7 @@ const options = {
         links: {
             enable: true, // this enables links between particles
             opacity: 0.3,
-            distance: 150,
+            distance: 120,
         },
         move: {
             enable: true, // this makes particles move
@@ -42,7 +42,7 @@ const options = {
             value: { min: 0.1, max: 0.3 }, // this sets the opacity of the particles
         },
         size: {
-            value: { min: 1, max: 3 }, // this sets the size of the particles
+            value: { min: 1, max: 2 }, // this sets the size of the particles
         },
     },
 };
