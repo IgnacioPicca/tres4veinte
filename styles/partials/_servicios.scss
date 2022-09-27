@@ -21,7 +21,7 @@
 }
 
 .servicio-img {
-    margin: 2em;
+    margin: 2em auto;
     width: 80%;
     min-width: 200px;
     height: 250px;
@@ -55,5 +55,10 @@
 @media (max-width: 990px) {
     #servicios-descripcion {
         display: none;
+    }
+
+    .servicio-item-container {
+        width: 70%;
+        max-width: 500px;
     }
 }
