@@ -1,6 +1,6 @@
 .fieldset {
     width: 40%;
-    min-width: 310px;
+    min-width: 260px;
     padding: 30px;
     margin: 6px auto;
     background: rgba(0, 0, 0, .5);
@@ -64,7 +64,7 @@
     }
 }
 
-
+// Elimina las flechas del input number
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

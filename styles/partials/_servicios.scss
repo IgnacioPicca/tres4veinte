@@ -17,7 +17,7 @@
     font-size: 1.2em;
     font-weight: bold;
     letter-spacing: 2px;
-    margin: 2em 2em;
+    margin: 2em 2em 0.5em;
 }
 
 .servicio-img {
@@ -31,9 +31,8 @@
 
 .servicio-item-container {
     width: 20%;
-    min-width: 300px;
-    height: 100%;
-    opacity: 2px;
+    min-width: 250px;
+    height: 450px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgb(255, 255, 255);
     justify-content: center;
@@ -57,5 +56,4 @@
     #servicios-descripcion {
         display: none;
     }
-
 }
