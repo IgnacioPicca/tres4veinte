@@ -1,6 +1,6 @@
 # TRES4VEINTE.-
 
-  El proyecto consiste en el desarrollo de una pagina web full responsive.
+  El proyecto consiste en el desarrollo de una pagina web full responsive para el curso de desarrollo web de CoderHouse.
   Esta basada en una academia de música electronica a la cual le tengo gran aprecio.
 
   Aproveché el editor Figma para los prototipos de las versiones mobile y desktop de todas las secciones de la web.
